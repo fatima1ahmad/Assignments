@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+header{
+    border: 2px solid green;
+    display: flex;
+    gap: 12px;
+    justify-content: space-between;
+    padding: 2px;
+    align-items: center;
+    margin: auto;
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+
+
+
+
+
+}
+/* nav{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    justify-content: space-between;
+    align-items: center;
+
+} */
+a{
+    text-decoration: none;
+}
+
+
+
+
