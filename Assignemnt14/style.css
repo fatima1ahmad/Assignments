@@ -1,0 +1,38 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.flex-c{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.flex-r{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+
+
+}
+div {
+    padding: 8px;
+    border: 3px solid blueviolet;
+}
+ .box{
+    flex: 1;
+ }
+ .box1{
+    flex:3;
+ }
+ .column-box
+ {
+    flex-direction: row;
+
+ }
+ .row-box{
+    flex-direction: row;
+ }
