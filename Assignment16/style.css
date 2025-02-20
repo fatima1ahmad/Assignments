@@ -15,7 +15,6 @@
 
 .chat{
     display: flex;
-    /* max-width: 800px; */
     height: 100vh;
     flex: 1;
     overflow: hidden;
@@ -32,7 +31,7 @@
     display: flex;
     flex-direction: column;
     gap: 6px;
-}
+}  
 
 .buttom{
     display: flex;
@@ -74,6 +73,7 @@
     align-items: center;
     justify-content: space-between;
     width: 100%;
+
 }
 
 .chats {
@@ -139,6 +139,7 @@
     border-radius: 12px;
     border: 1px solid #100909;
     margin-bottom: 10px;
+
 }
 .photo {
     width: 50px; /* Set width */
@@ -193,10 +194,10 @@
     border:1px solid black;
 }
 .chats {
-    flex: 3; /* Takes up remaining space */
+    flex: 3; 
     display: flex;
-    flex-direction: column; /* Stack header and image vertically */
-    height: 100%; /* Ensure it takes full height */
+    flex-direction: column; 
+    height: 100%; 
 }
 
 
