@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    height: 100vh;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    background-color:#181d25;
+}
+button{
+    background-color: #0c9;
+    border-radius: 45px;
+    padding: 10px 12px ;
+}
+a{
+    color: white;
+}
+.lefthead {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    color: azure;
+}
+.righthead {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    color: azure;
+}
+video {
+    width: 100%;
+}
+.flex1 {
+    display: flex;
+    overflow-x: auto; 
+    width: 100%; 
+}
+.flex {
+    display: flex;
+    flex-direction: row;
+    gap:10px;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: nowrap; 
+}
+.flex img {
+    height: 200px;
+}
