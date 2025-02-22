@@ -3,20 +3,17 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 body {
     display: flex;
     height: 100vh;
     background-color: rgb(255, 255, 255);
 }
-
 .all {
     display: flex;
     flex-direction: column;
     width: 100%;
     height: 100%;
 }
-
 .header {
     display: flex;
     justify-content: space-between;
@@ -24,12 +21,10 @@ body {
     padding: 10px;
     background-color: rgb(255, 255, 255);
 }
-
 .name {
     font-size: 20px;
     font-weight: bold;
 }
-
 .buttom {
     display: flex;
     justify-content: center;
@@ -41,14 +36,12 @@ body {
     height: 40px;
     white-space: nowrap;
 }
-
 .bar {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
     height: 100%;
 }
-
 .left-bar {
     display: flex;
     flex-direction: column;
@@ -57,25 +50,21 @@ body {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     min-width: 200px;  
     max-width: 250px; 
-    flex-grow: 1;      
 }
-
 .main-bar {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     flex-grow: 1; 
+    gap: 30px;
     padding: 20px;
 }
-
 .what {
     font-size: 40px;
     font-weight: bold;
-    margin-bottom: 30px;
     text-align: center;
 }
-
 .search-bar {
     display: flex;
     align-items: center;
@@ -84,9 +73,7 @@ body {
     border-radius: 30px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     max-width: 700px; 
-   
 }
-
 .search-bar input {
     border: none;
     background: none;
@@ -94,14 +81,11 @@ body {
     font-size: 18px;
     flex: 1;
 }
-
 .buttons {
     display: flex;
     align-items: center;
     gap: 8px;
-    flex-wrap: 1;
 }
-
 .icon-btn {
     display: flex;
     align-items: center;
@@ -114,7 +98,6 @@ body {
     border-radius: 50%;
     cursor: pointer;
 }
-
 .btn {
     font-size: 14px;
     color: #333;
