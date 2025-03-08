@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NASA Website</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html, body {
+            overflow-x: hidden;
+            width: 100%;
+        }
+
+        img, iframe {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .navbar {
+            background-color: black;
+        }
+
+        .navbar-brand img {
+            height: 50px;
+        }
+
+        .navbar-nav .nav-link {
+            color: white;
+            font-weight: bold;
+        }
+
+        .live-badge {
+            background: red;
+            color: white;
+            font-size: 12px;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-weight: bold;
+        }
+
+        .fea1 {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .mo {
+            display: flex;
+            align-items: flex-end;
+            justify-content: flex-start;
+            font-size: 35px;
+            font-weight: bold;
+        }
+
+        .imgcon {
+            position: relative;
+        }
+
+        .text3 {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .earthimg {
+            height: 100vh;
+            object-fit: cover;
+            filter: brightness(50%);
+        }
+
+        .custom-img {
+            width: 80px;
+            height: 70px;
+            object-fit: cover;
+        }
+
+        .custom-card {
+            height: 550px;
+            color: white;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            left: 0;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .bl {
+            background-color: black;
+            color: white;
+            padding: 10px;
+        }
+
+        .imageof {
+            display: flex;
+            flex-direction: column;
+            margin-top: 50px;
+            gap: 20px;
+        }
+
+        .bold {
+            font-weight: bold;
+        }
+
+        .imgof {
+            background-color: #d5c9c9;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .iframe {
+            overflow-x: hidden;
+        }
+
+        .custom-card-img {
+            width: 100%;
+            height: 450px;
+            object-fit: cover;
+        }
+
+        .im {
+            max-width: 60%;
+            margin: auto;
+        }
+
+        .btn-dan {
+            color: #fff;
+            background-color: #d83933;
+        }
+
+        .bg-image {
+            display: flex;
+            height: 100vh;
+            color: #fff;
+            align-items: center;
+        }
+
+        .fw-bold {
+            font-size: 50px;
+            width: 100%;
+            max-width: 300px;
+        }
+
+        .text2 {
+            font-weight: bold;
+        }
+
+        .imag2 {
+            background-image: url('earth.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .imag1 {
+            background-image: url('moon.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .mainp {
+            display: flex;
+            justify-content: space-around;
+            font-weight: bold;
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+            <div class="d-flex align-items-center">
+                <div class="dropdown me-3">
+                    <button class="btn btn-dark dropdown-toggle bold" type="button" data-bs-toggle="dropdown">
+                        Explore
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Missions</a></li>
+                        <li><a class="dropdown-item" href="#">Galleries</a></li>
+                        <li><a class="dropdown-item" href="#">About NASA</a></li>
+                    </ul>
+                </div>
+                <input type="text" class="form-control" placeholder="Search..." style="max-width: 200px;">
+            </div>
+        
+            <a class="navbar-brand position-absolute start-50 translate-middle-x" href="#">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/e/e5/NASA_logo.svg" alt="NASA Logo" height="50">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">News & Events</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Latest News</a></li>
+                            <li><a class="dropdown-item" href="#">Upcoming Events</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Multimedia</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Images</a></li>
+                            <li><a class="dropdown-item" href="#">Videos</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">NASA+ <span class="live-badge">LIVE</span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid p-0">
+        <div class="bg-image imag1">
+            <header class="hero-section">
+                <div class="container">
+                    <div class="row">
+                        <h1 class="fw-bold">Blue Ghost Lands on the Moon</h1>
+                    </div>
+                    <div class="row">
+                        <p class="text2">Carrying NASA science and technology to the moon, Firefly Aerospace's lunar lander, Blue Ghost, touched down on the lunar surface at 3:34 a.m. EST on Sunday, March 2.</p>
+                    </div>
+                    <button type="button" class="btn btn-dan">Mission Updates</button>
+                </div>
+            </header>
+        </div>
+    </div>
+    <section class="container-fluid mb-4">
+        <br>
+        <div class="fea1">
+            <h1>Featured News</h1>
+            <h3>More NASA News</h3>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-6">
+                    <div class="card text-bg-dark text-white position-relative" style="height: 400px;">
+                        <img src="moon.png" class="card-img" alt="..." style="height: 100%; width: 100%; object-fit: cover;">
+                        <div class="card-img-overlay d-flex flex-column justify-content-between p-3">
+                            <h5 class="card-title position-absolute top-0 start-0 m-3">Article</h5>
+                            <div class="position-absolute bottom-0 start-0 m-3">
+                                <p class="card-text"><small>3 mins read</small></p>
+                                <p class="card-text fw-bold fs-5">NASA Successfully Acquires GPS Signals on Moon</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-sm-12 col-md-3">
+                    <div class="card text-bg-dark text-white position-relative" style="height: 400px;">
+                        <img src="i2.png" class="card-img" alt="..." style="height: 100%; width: 100%; object-fit: cover;">
+                        <div class="card-img-overlay d-flex flex-column justify-content-between p-3">
+                            <h5 class="card-title position-absolute top-0 start-0 m-3">Article</h5>
+                            <div class="position-absolute bottom-0 start-0 m-3">
+                                <p class="card-text"><small>3 mins read</small></p>
+                                <p class="card-text fw-bold fs-5">NASA Successfully Acquires GPS Signals on Moon</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-sm-12 col-md-3">
+                    <div class="row">
+                        <div class="col-12 mb-2">
+                            <div class="card text-bg-dark text-white position-relative" style="height: 195px;">
+                                <img src="i3.png" class="card-img" alt="..." style="height: 100%; width: 100%; object-fit: cover;">
+                                <div class="card-img-overlay d-flex flex-column justify-content-between p-3">
+                                    <h5 class="card-title position-absolute top-0 start-0 m-3">Article</h5>
+                                    <div class="position-absolute bottom-0 start-0 m-3">
+                                        <p class="card-text"><small>3 mins read</small></p>
+                                        <p class="card-text fw-bold fs-5">NASA Successfully Acquires GPS Signals on Moon</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="col-12">
+                            <div class="card text-bg-dark text-white position-relative" style="height: 195px;">
+                                <img src="i4.png" class="card-img" alt="..." style="height: 100%; width: 100%; object-fit: cover;">
+                                <div class="card-img-overlay d-flex flex-column justify-content-between p-3">
+                                    <h5 class="card-title position-absolute top-0 start-0 m-3">Article</h5>
+                                    <div class="position-absolute bottom-0 start-0 m-3">
+                                        <p class="card-text"><small>3 mins read</small></p>
+                                        <p class="card-text fw-bold fs-5">NASA Successfully Acquires GPS Signals on Moon</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="row mt-4">
+                <div class="col-sm-6 col-md-3">
+                    <div class="card mb-3 border-0">
+                        <div class="row g-2 align-items-center">
+                            <div class="col-3">
+                                <img src="a1.png" class="img-fluid rounded-circle custom-img" alt="...">
+                            </div>
+                            <div class="col-9">
+                                <div class="card-body p-0">
+                                    <p class="card-text text-uppercase text-muted small mb-1">3 min read</p>
+                                    <h5 class="card-title bold mb-1">NASA Successfully Acquires GPS Signals on Moon</h5>
+                                    <p class="card-text text-muted small d-flex align-items-center">
+                                        <i class="bi bi-file-earmark-text me-1"></i> Article
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    <div class="col-sm-6 col-md-3">
+                    <div class="card mb-3 border-0">
+                        <div class="row g-2 align-items-center">
+                            <div class="col-3">
+                                <img src="a2.png" class="img-fluid rounded-circle custom-img" alt="...">
+                            </div>
+                            <div class="col-9">
+                                <div class="card-body p-0">
+                                    <p class="card-text text-uppercase text-muted small mb-1">3 min read</p>
+                                    <h5 class="card-title bold mb-1">NASA Successfully Acquires GPS Signals on Moon</h5>
+                                    <p class="card-text text-muted small d-flex align-items-center">
+                                        <i class="bi bi-file-earmark-text me-1"></i> Article
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-sm-6 col-md-3">
+                    <div class="card mb-3 border-0">
+                        <div class="row g-2 align-items-center">
+                            <div class="col-3">
+                                <img src="a3.png" class="img-fluid rounded-circle custom-img" alt="...">
+                            </div>
+                            <div class="col-9">
+                                <div class="card-body p-0">
+                                    <p class="card-text text-uppercase text-muted small mb-1">3 min read</p>
+                                    <h5 class="card-title bold mb-1">NASA Successfully Acquires GPS Signals on Moon</h5>
+                                    <p class="card-text text-muted small d-flex align-items-center">
+                                        <i class="bi bi-file-earmark-text me-1"></i> Article
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-sm-6 col-md-3">
+                    <div class="card mb-3 border-0">
+                        <div class="row g-2 align-items-center">
+                            <div class="col-3">
+                                <img src="a4.png" class="img-fluid rounded-circle custom-img" alt="...">
+                            </div>
+                            <div class="col-9">
+                                <div class="card-body p-0">
+                                    <p class="card-text text-uppercase text-muted small mb-1">3 min read</p>
+                                    <h5 class="card-title bold mb-1">NASA Successfully Acquires GPS Signals on Moon</h5>
+                                    <p class="card-text text-muted small d-flex align-items-center">
+                                        <i class="bi bi-file-earmark-text me-1"></i> Article
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <br>
+    
+    <section class="container-fluid mb-4">
+        <div class="bl">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <h6 >Featured Video</h6>
+                    <h2 class=" bold">Paving the Path to Mars</h2>
+                    <p>
+                        Gateway is central to the NASA-led Artemis missions to return to the Moon for scientific discovery and chart a path for the first human missions to Mars and beyond.
+                        The small space station will be a multi-purpose outpost supporting lunar surface missions, science in lunar orbit, and human exploration further into the cosmos.
+                    </p>
+                </div>
+                <div class="col-md-6">
+                    <div class="ratio ratio-16x9">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/hEyLK506WLQ?si=v7WHVLYzGek8YGAi"
+                         title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                         referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <br>
+    <div class="container">
+        <h1 class="bold">The Solar System</h1>
+        <br>
+        <div class="row">
+            <div class="col-sm-6 col-md-3">
+                <div class="card bg-dark text-white" style="height: 450px; width: 100%;">
+                    <img class="card-img" src="moon4.jpg" alt="Moons" style="height: 100%; width: 100%; object-fit: cover;">
+                    <div class="card-img-overlay mo">
+                        <p>Moons</p>
+                    </div>
+                </div>
+            </div>
+                <div class="col-sm-6 col-md-3">
+                <div class="card bg-dark text-white" style="height: 450px; width: 100%;">
+                    <img class="card-img" src="moon2.png" alt="Mars" style="height: 100%; width: 100%; object-fit: cover;">
+                    <div class="card-img-overlay mo">
+                        <p>Mars</p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="col-sm-6 col-md-3">
+                <div class="card bg-dark text-white" style="height: 450px; width: 100%;">
+                    <img class="card-img" src="moon3.jpg" alt="Planets" style="height: 100%; width: 100%; object-fit: cover;">
+                    <div class="card-img-overlay mo">
+                        <p>Planets</p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="col-sm-6 col-md-3">
+                <div class="card bg-dark text-white" style="height: 450px; width: 100%;">
+                    <img class="card-img" src="moon1.png" alt="Universe" style="height: 100%; width: 100%; object-fit: cover;">
+                    <div class="card-img-overlay mo">
+                        <p>Universe</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <br>
+    <div class="container-fluid p-0">
+        <div class="card bg-dark text-white border-0">
+          <img class="card-img img-fluid w-100 earthimg" src="earth.png" 
+               alt="Background Image">
+          <div class="card-img-overlay text3">
+            <div class="container">
+              <h1 class="fw-bold">Earth Information Center</h1>
+              <p class="mb-4" style="max-width: 600px;">
+                For more than 50 years, NASA satellites have provided data on Earth's land, water, air, 
+                temperature, and climate. NASA's Earth Information Center allows visitors to see how our 
+                planet is changing in six key areas: sea level rise and coastal impacts, health and air quality, 
+                wildfires, greenhouse gases, sustainable energy, and agriculture.
+              </p>
+              <p class="bold">Start Exploring →</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br>
+      <section class="Image Of The Day">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-4 imageof">
+                    <h1 class="bold">Image Of The Day</h1>
+                    <h3>Hubble Captures New View of Colorful Veil</h3>
+                    <p>
+                        This NASA/ESA Hubble Space Telescope image features a supernova remnant called the Veil Nebula.
+                        This nebula is the remnant of a star roughly 20 times as massive as the Sun that exploded about 10,000 years ago.
+                    </p>
+                    <h5><a href="#" class="text-danger">Browse Image Archive →</a></h5>
+                </div>
+    
+                <div class="col-sm-12 col-md-8">
+                    <div class="card im text-white">
+                        <img class="card-img imgof" src="i3.png"  alt="NASA Image">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <br>
+    <section class="More NASA Images">
+    <div class="container-fluid">
+        <div class="container">
+            <h1>More NASA Images</h1>
+            <br>
+            <div class="row ">
+                <div class="col-sm-12 col-md-4">
+                    <div class="card" style="width: 25rem;">
+                        <img class="card-img-top" src="Earth1.png" alt="Card image cap">
+                        <div class="card-body">
+                          <p class="card-text">Earth Gallery.</p>
+                        </div>
+                      </div>   
+                </div>
+                <div class="col-sm-12 col-md-4">
+                    <div class="card" style="width: 25rem;">
+                        <img class="card-img-top" src="moons.png" alt="Card image cap">
+                        <div class="card-body">
+                          <p class="card-text">Earth's moon Gallery.</p>
+                        </div>
+                      </div>   
+                </div>
+                <div class="col-sm-12 col-md-4">
+                    <div class="card" style="width: 25rem;">
+                        <img class="card-img-top" src="sun.png" alt="Card image cap">
+                        <div class="card-body">
+                          <p class="card-text">sun Gallery.</p>
+                        </div>
+                      </div>   
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+    
+    <br>
+    <div class="container-fluid p-0">
+        <div class="card bg-dark text-white border-0">
+          <img class="card-img img-fluid w-100 custom-card " src="we.webp" 
+               alt="Background Image">
+               <div class="card-img-overlay  overlay text3">
+                <div class="container">
+                    <div class="row">
+                  <h1 class="fw-bold">Explore the Universe from your Inbox</h1>
+                </div>
+                <div class="row">
+                  <p class="mb-4" style="max-width: 600px;">
+                    Stay up-to-date on the latest news from NASA  from Earth to the Moon, the Solar System and beyond
+                  </p></div>
+                  <div class="row">
+                  <p class="bold">We will never share your email address.
+                         Privacy Policy</p>
+                         <h2>Sign Up</h2>
+                       
+    
+                        </div>
+    
+                </div>
+              </div>
+      </div>
+    <br>
+    <div class="container-fluid p-0">
+        <div class="container">
+            <br>
+            <div class="row">
+                <!-- Card 1 -->
+                <div class="col-sm-6 col-md-3">
+                    <div class="card bg-dark text-white" style="height: 460px; width: 100%;">
+                        <img class="card-img" src="mis.webp" alt="Card image" style="height: 100%; width: 100%; object-fit: cover;">
+                        <div class="card-img-overlay mo">
+                            <p>Missions</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Card 2 -->
+                <div class="col-sm-6 col-md-3">
+                    <div class="card bg-dark text-white" style="height: 460px; width: 100%;">
+                        <img class="card-img" src="hu.webp" alt="Card image" style="height: 100%; width: 100%; object-fit: cover;">
+                        <div class="card-img-overlay mo">
+                            <p>Humans in space</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Card 3 -->
+                <div class="col-sm-6 col-md-3">
+                    <div class="card bg-dark text-white" style="height: 460px; width: 100%;">
+                        <img class="card-img" src="ple.webp" alt="Card image" style="height: 100%; width: 100%; object-fit: cover;">
+                        <div class="card-img-overlay mo">
+                            <p>Climate change</p>
+                        </div>
+                    </div>
+                </div>
+
+    
+                <!-- Card 4 -->
+                <div class="col-sm-6 col-md-3">
+                    <div class="card bg-dark text-white" style="height: 460px; width: 100%;">
+                        <img class="card-img" src="soler.webp" alt="Card image" style="height: 100%; width: 100%; object-fit: cover;">
+                        <div class="card-img-overlay mo">
+                            <p>Our Solar System</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <!-- Card 1 -->
+                <div class="col-sm-6 col-md-3">
+                    <div class="card bg-dark text-white" style="height: 460px; width: 100%;">
+                        <img class="card-img" src="https://science.nasa.gov/wp-content/uploads/2023/09/ngc5068-1-flat-final.jpg" alt="Card image" style="height: 100%; width: 100%; object-fit: cover;">
+                        <div class="card-img-overlay mo">
+                            <p>Universe</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Card 2 -->
+                <div class="col-sm-6 col-md-3">
+                    <div class="card bg-dark text-white" style="height: 460px; width: 100%;">
+                        <img class="card-img" src="l1.webp" alt="Card image" style="height: 100%; width: 100%; object-fit: cover;">
+                        <div class="card-img-overlay mo">
+                            <p>science News</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Card 3 -->
+                <div class="col-sm-6 col-md-3">
+                    <div class="card bg-dark text-white" style="height: 460px; width: 100%;">
+                        <img class="card-img" src="l2.webp" alt="Card image" style="height: 100%; width: 100%; object-fit: cover;">
+                        <div class="card-img-overlay mo">
+                            <p>Aeronautics</p>
+                        </div>
+                    </div>
+                </div>
+                
+    
+                <!-- Card 4 -->
+                <div class="col-sm-6 col-md-3">
+                    <div class="card bg-dark text-white" style="height: 460px; width: 100%;">
+                        <img class="card-img" src="l3.webp" alt="Card image" style="height: 100%; width: 100%; object-fit: cover;">
+                        <div class="card-img-overlay mo">
+                            <p>Technology</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+        </div>
+    </div>
+    
+    <div class="container-fluid">
+      <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="nasa.png" alt="Company Logo" class="mb-2" style="height: 50px;">
+                    <p class="small">
+                        Your Company Name<br>
+                        Exploring innovation for a better future.
+                    </p>
+                </div>
+                <div class="col-md-8">
+                    <div class="row">
+                        <div class="col-6 col-md-4">
+                            <h6 class="text-uppercase">Explore</h6>
+                            <ul class="list-unstyled small">
+                                <li><a href="#" class="text-white text-decoration-none">Home</a></li>
+                                <li><a href="#" class="text-white text-decoration-none">News & Events</a></li>
+                                <li><a href="#" class="text-white text-decoration-none">Missions</a></li>
+                                <li><a href="#" class="text-white text-decoration-none">Technology</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-6 col-md-4">
+                            <h6 class="text-uppercase">Resources</h6>
+                            <ul class="list-unstyled small">
+                                <li><a href="#" class="text-white text-decoration-none">Learning</a></li>
+                                <li><a href="#" class="text-white text-decoration-none">About Us</a></li>
+                                <li><a href="#" class="text-white text-decoration-none">NASA+ Like</a></li>
+                                <li><a href="#" class="text-white text-decoration-none">Humans in Space</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-6 col-md-4">
+                            <h6 class="text-uppercase">Legal</h6>
+                            <ul class="list-unstyled small">
+                                <li><a href="#" class="text-white text-decoration-none">Privacy Policy</a></li>
+                                <li><a href="#" class="text-white text-decoration-none">FOIA</a></li>
+                                <li><a href="#" class="text-white text-decoration-none">Accessibility</a></li>
+                                <li><a href="#" class="text-white text-decoration-none">Sitemap</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <hr class="border-secondary my-3">
+    
+            <div class="d-flex flex-column flex-md-row justify-content-between small">
+                <p class="mb-0">Page Last Updated: Mar 05, 2025</p>
+                <p class="mb-0">© 2025 Your Company. All Rights Reserved.</p>
+            </div>
+        </div>
+    </div>
+    
+        
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

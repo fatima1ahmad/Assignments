@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.fea1{
+  display: flex;
+  justify-content: space-around;
+}
+.mo{
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  font-size: 35px;
+  font-weight: bold;
+}
+.imgcon{
+  position: relative;
+
+}
+.text3{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.earthimg{
+
+  height: 100vh;
+  
+  object-fit: cover; 
+  filter: brightness(50%); 
+
+}
+.custom-img {
+  width: 80px;
+  height: 70px;
+  object-fit: cover; 
+}
+.custom-card {
+          height: 550px;
+          color: white;
+      }
+      .overlay {
+          position: absolute;
+          top: 0;
+          width: 100%;
+          left: 100px;
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          
+      }
+      
+.bl{
+  background-color: black;
+  color: white;
+  padding: 10px;
+}
+.imageof {
+        display: flex;
+        flex-direction: column;
+       margin-top: 50px;
+          gap: 20px;
+      }
+      .bold {
+          font-weight: bold;
+      }
+      .imgof {
+          background-color: #d5c9c9;
+          border-radius: 10px;
+          text-align: center;
+      }
+
+.custom-card-img {
+width: 100%;  /* Adjust as needed */
+height: 450px; /* Adjust height as needed */
+object-fit: cover; /* Ensures the image maintains aspect ratio without distortion */
+}
+
+.im{
+  max-width: 60%;
+   margin: auto;
+}
+ .nav1{
+   display: flex;
+   justify-content: space-between;
+    }
+ 
+  .btn-dan{
+  color: #fff;
+  background-color: #d83933;
+}
+.bg-image{
+  display: flex;
+  height: 100vh;
+  color: #fff;
+  align-items: center;
+}
+.fw-bold{
+  font-size: 50px;
+  width: 300px;
+
+}
+.text2{
+  font-weight: bold;
+
+}
+.imag2{
+  background-image: url('earth.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.imag1 {
+  background-image: url('moon.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.mainp{
+  display: flex;
+  justify-content: space-around;
+  font-weight: bold;
+  font-size: 30px;
+
+  
+
+}
