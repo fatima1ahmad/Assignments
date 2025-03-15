@@ -50,3 +50,7 @@ console.log(st11.indexOf("pt"));
 console.log(st11.lastIndexOf("world"));
 
 console.log("fatima".repeat(3));
+let p1="javascript";
+let p2="hello world";
+console.log(p1.concat(p2));
+
