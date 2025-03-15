@@ -95,8 +95,12 @@
             object-fit: cover;
         }
         .im {
-            max-width: 60%;
+            min-height: 500px;
+            max-width: 70%;
             margin: auto;
+            display: flex;
+            align-items: center; 
+           justify-content: center;
         }
 
         .btn-dan {
@@ -152,6 +156,7 @@
                 </div>
                 <input type="text" class="form-control" placeholder="Search..." style="max-width: 200px;">
             </div>
+
             <div class="d-flex flex-grow-1 justify-content-center">
                 <a class="navbar-brand" href="#">
                     <img src="https://upload.wikimedia.org/wikipedia/commons/e/e5/NASA_logo.svg" alt="NASA Logo" height="50">
@@ -453,7 +458,7 @@
     
                 <div class="col-sm-12 col-md-8">
                     <div class="card im bg-light text-white px-5 border-0 ">
-                        <img class="card-img img-fluid w-100" src="i3.png" alt="NASA Image">
+                        <img class="card-img img-fluid w-100" src="i3.png" alt="NASA Image" style="height: 100%;object-fit: cover;">
                     </div>
                 </div>
             </div>
@@ -540,8 +545,7 @@
                 </div>
               </div>
       </div>
-    <br>
-    <div class="container-fluid p-0">
+    <div class="container-fluid p-0 mt-2">
         <div class="container">
             <br>
             <div class="row">
@@ -592,8 +596,7 @@
                     </div>
                 </div>
             </div>
-            <br>
-            <div class="row">
+            <div class="row mt-4">
                 <!-- Card 1 -->
                 <div class="col-sm-6 col-md-3">
                     <div class="card bg-dark text-white" style="height: 460px; width: 100%; filter: brightness(85%);">
@@ -651,7 +654,7 @@
                 <div class="col-md-4">
                     <img src="nasa.png" alt="Company Logo" class="mb-2" style="height: 70px;">
                     <p class="small">
-                        Your Company Name<br>
+                        NASA <br>
                         Exploring innovation for a better future.
                     </p>
                 </div>
@@ -693,7 +696,6 @@
             </div>
     
             <hr class="border-secondary my-3">
-    
             <div class="d-flex flex-column flex-md-row justify-content-between small">
                 <p class="mb-0">Page Last Updated: Mar 05, 2025</p>
                 <p class="mb-0">© 2025 Your Company. All Rights Reserved.</p>
