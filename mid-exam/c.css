@@ -11,6 +11,12 @@ body{
   padding: 10px 12px;
   height: 120px; 
  }
+ .g1{
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #34495e;
+    font-size: 18px;
+    }
   .uscard {
     border: none;
     border-radius: 15px;
