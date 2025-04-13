@@ -50,11 +50,15 @@
                   <div class="title">Add User</div>
         
                   <form onsubmit="return validateForm()">
+                    <label class="form-label g1">Full Name:</label>
+
                     <input type="text" placeholder="User Name" id="fullname" name="fullname" class="form-control form-control-lg"/>
                     <p id="fullError" class="error"></p>
+                    <label class="form-label g1">Email:</label>
+        
                     <input type="email" placeholder="Email" id="email" name="email" class="form-control form-control-lg"/>
                     <p id="emailError" class="error"></p>
-                    <label class="form-label">Gender</label>
+                    <label class="form-label g1">Gender:</label>
                     <select class="form-select form-select-lg" name="gender" id="gender">
                       <option value="">Select Gender</option>
                       <option value="Female">Female</option>
@@ -62,9 +66,12 @@
                       <option value="Other">Other</option>
                     </select>
                     <p id="genderError" class="error"></p>
+                    <label class="form-label g1">Address:</label>
+        
                     <textarea placeholder="Address" id="Address" name="Address" class="form-control form-control-lg n1"></textarea>
                     <p id="AddressError" class="error"></p>
                     
+                    <label class="form-label g1">Phone Number:</label>
         
                     <input type="number" placeholder="Phone Number" id="phoneNumber" name="phoneNumber" class="form-control form-control-lg"/>
                     <p id="phoneError" class="error"></p>
