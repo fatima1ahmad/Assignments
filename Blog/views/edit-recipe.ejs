@@ -1,0 +1,14 @@
+<%- include('partials/header') %>
+<main class="container mt-4">
+  <h1 class="mb-4">Edit Recipe</h1>
+  <form action="/update-recipe/<%= recipe.id %>" method="POST" class="recipe-form">
+    <input type="text" name="title" class="form-input" value="<%= recipe.title %>" required>
+    <input type="text" name="category" class="form-input" value= " <%= recipe.category %>" required>
+    <textarea name="instructions" class="form-input" rows="6" required><%= recipe.instructions %></textarea>
+
+    <div class="form-actions">
+      <button type="submit" class="submit-btn">Update Recipe</button>
+    </div>
+  </form>
+</main>
+<%- include('partials/footer') %>

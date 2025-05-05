@@ -1,0 +1,29 @@
+<%- include('partials/header') %>
+<main class="container mt-4">
+    <h1 class="mb-4">Featured Recipes</h1>
+    <div class="row g-4">
+        <% recipes.forEach((recipe) => { %>
+            <div class="col-sm-12 col-md-6 col-lg-4">
+          <div class="recipe-card">
+            <span class="recipe-category"><%= recipe.category %></span>
+            <h2 class="recipe-title fs-5"><%= recipe.title %></h2>
+            <p><%= recipe.instructions %></p>
+            <small>Added: <%= new Date(recipe.createdAt).toLocaleDateString() %></small>
+  
+            <div class="recipe-actions mt-3">
+                <a href="/edit-recipe/<%= recipe.id %>" class="edit-btn">Edit</a>
+                <form action="/delete-recipe/<%= recipe.id %>" method="POST">
+                
+                
+                <button type="submit" class="delete-btn">Delete</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      <% }); %>
+    </div>
+  </main>
+  
+
+
+<%- include('partials/footer') %>

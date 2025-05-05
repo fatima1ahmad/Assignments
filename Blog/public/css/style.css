@@ -1,0 +1,156 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+  background: #ffffff;
+  color: #495057;
+  line-height: 1.6;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.tx1{
+  color:  #FF9F1C;
+}
+.btn1 {
+  background-color: #FF9F1C;
+  color: #F8F9FA;
+  padding: 12px 20px;
+  border-radius: 4px;
+  text-decoration: none;
+  
+}
+.btn1:hover{
+  background-color: #d57d11; 
+}
+.fot1{
+  color:  #495057;
+
+  display: flex;
+  padding: 4px;
+
+}
+
+.header {
+  background: #ffffff;
+  padding: 16px 0;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-brand {
+  font-size: 28px;
+  font-weight: 700;
+  color: #FF9F1C;
+  text-decoration: none;
+}
+
+.recipe-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 32px;
+  margin: 48px 0;
+}
+
+.recipe-card {
+  background: #ffffff;
+  border-radius: 8px;
+  padding: 24px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.recipe-title {
+  color: #88C9B9;
+  margin-top: 0;
+}
+
+.recipe-category {
+  display: inline-block;
+  background: #F8F9FA;
+  padding: 5px 13px;
+  border-radius: 20px;
+  font-size: 13px;
+  margin-bottom: 16px;
+}
+
+.recipe-form {
+  max-width: 600px;
+  margin: 32px auto;
+}
+
+.form-input {
+  width: 100%;
+  padding: 13px;
+  margin-bottom: 16px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.submit-btn {
+  background: #FF9F1C;
+  color: #ffffff;
+  border: none;
+  padding: 13px 24px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+
+
+.recipe-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 16px;
+}
+
+.edit-btn, .delete-btn {
+  padding: 8px 16px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 14px;
+  cursor: pointer;
+  border: none;
+  color: #ffffff;
+}
+
+.edit-btn {
+  background: #88C9B9;
+}
+
+.delete-btn {
+  background: #ff6b6b;
+}
+
+.form-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 16px;
+}
+
+.footer {
+  text-align: center;
+  padding: 32px 0;
+  margin-top: 48px;
+  color: #495057;
+}
