@@ -4,7 +4,7 @@
     <div class="row g-4">
         <% recipes.forEach((recipe) => { %>
             <div class="col-sm-12 col-md-6 col-lg-4">
-          <div class="recipe-card">
+          <div class="recipe-card text-truncate">
             <span class="recipe-category"><%= recipe.category %></span>
             <h2 class="recipe-title fs-5"><%= recipe.title %></h2>
             <p><%= recipe.instructions %></p>
