@@ -1,0 +1,87 @@
+body{
+    background-color:#fbfbfb;
+  }
+  .hel{
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+
+  }
+  .n1 {
+  padding: 10px 12px;
+  height: 120px; 
+ }
+ .g1{
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #34495e;
+    font-size: 18px;
+    }
+  .uscard {
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 20px;
+    background: white;
+  }
+  .uscard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+  }
+  .icons {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    background-color: #f0f2f5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #6c757d;
+  }
+  .icons i {
+    font-size: 64px;
+    color: #adb5bd;
+  }
+  .user-info {
+    padding: 20px;
+  }
+  .user-name {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #2c3e50;
+  }
+  .user-detail {
+    margin-bottom: 8px;
+    font-size: 14.4px;
+    color: #495057;
+  }
+  .user-detail strong {
+    color: #343a40;
+    font-weight: 500;
+  }
+  .error {
+    color: #ef2a3d;
+    font-size: 20px;
+   
+  }
+
+  .title {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 24px;
+    text-align: center;
+    color: #2c4155;
+  }
+
+  .form-control-lg, .form-select-lg {
+    margin-bottom: 16px;
+  }
+
+
+  .nav-tabs .nav-link.active {
+    color: #0967f4;
+    background-color: rgba(43, 103, 193, 0.05);
+  }
