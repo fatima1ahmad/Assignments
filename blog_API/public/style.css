@@ -1,0 +1,287 @@
+:root {
+  --primary-color: #6c5ce7;
+  --secondary-color: #a29bfe;
+  --accent-color: #fd79a8;
+  --light-color: #f8f9fa;
+  --dark-color: #343a40;
+  --text-color: #2d3436;
+  --muted-color: #636e72;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--text-color);
+  background-color: #ffffff;
+  line-height: 1.6;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #ffffff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+  font-weight: 700;
+  color: var(--primary-color) !important;
+  font-size: 24px;
+}
+
+.nav-link {
+  color: var(--text-color) !important;
+  font-weight: 500;
+  margin: 0 8px;
+}
+
+.nav-link:hover {
+  color: var(--primary-color) !important;
+}
+
+/* Buttons */
+.btn-enchanted {
+  background-color: var(--primary-color);
+  color: #ffffff;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 14px;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.btn-enchanted:hover {
+  background-color: var(--secondary-color);
+}
+
+/* Hero Section */
+.hero-section {
+  padding: 80px 0;
+  background: linear-gradient(135deg, #f9f9ff 0px, #e6e9ff 100px);
+  border-radius: 0 0 20px 20px;
+  text-align: center;
+}
+
+.display-4 {
+  font-weight: 700;
+  color: var(--primary-color);
+  font-size: 48px;
+}
+
+/* Featured Recipe */
+.featured-recipe {
+  border: 1px solid rgba(108, 92, 231, 0.2);
+  border-radius: 10px;
+  padding: 24px;
+  background-color: #ffffff;
+}
+
+/* Badge */
+.badge.bg-enchanted {
+  background-color: var(--primary-color);
+  color: #ffffff;
+  padding: 8px 16px;
+  border-radius: 50px;
+}
+
+/* Posts List */
+#postsList {
+  list-style: none;
+  padding: 0;
+}
+
+#postsList li {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 32px;
+  margin-bottom: 32px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+#postsList li:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+#postsList h2 {
+  color: var(--primary-color);
+  margin-bottom: 16px;
+  font-size: 24px;
+}
+
+#postsList small {
+  color: var(--muted-color);
+  display: block;
+  margin-bottom: 16px;
+}
+
+/* Form */
+form {
+  background-color: #ffffff;
+  padding: 32px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+input[type="text"],
+textarea {
+  width: 100%;
+  padding: 16px;
+  margin-bottom: 24px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-family: inherit;
+  font-size: 14px;
+}
+
+textarea {
+  min-height: 200px;
+}
+
+.full-width {
+  width: 100%;
+  padding: 16px;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--primary-color);
+  color: #ffffff;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.full-width:hover {
+  background-color: var(--secondary-color);
+}
+
+/* Footer */
+footer {
+  background-color: var(--light-color);
+  padding: 48px 0;
+  margin-top: 80px;
+}
+
+.social-icons a {
+  color: var(--muted-color);
+  font-size: 24px;
+  margin: 0 8px;
+}
+
+.social-icons a:hover {
+  color: var(--primary-color);
+}
+
+/* Post Page */
+.single-post {
+  background-color: #ffffff;
+  padding: 32px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  max-width: 100%;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+.post-title {
+  font-size: 32px;
+  margin-bottom: 16px;
+  color: var(--primary-color);
+}
+
+.post-meta {
+  color: var(--muted-color);
+  font-size: 14px;
+  margin-bottom: 24px;
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+}
+
+.post-content {
+  white-space: pre-line;
+  line-height: 1.6;
+  margin-top: 24px;
+  overflow-wrap: anywhere;
+}
+
+.post-content p {
+  margin-bottom: 16px;
+}
+
+/* Utility */
+.text-muted {
+  color: var(--muted-color) !important;
+}
+
+.rounded-4 {
+  border-radius: 16px !important;
+}
+
+.shadow-lg {
+  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.175) !important;
+}
+
+/* Read More Button */
+.read-more {
+  background-color: var(--primary-color);
+  color: #ffffff;
+  padding: 8px 16px;
+  border-radius: 50px;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 14px;
+  white-space: nowrap;
+  display: inline-block;
+}
+
+.read-more:hover {
+  background-color: var(--secondary-color);
+}
+/* Responsive adjustments */
+@media (min-width: 768px) {
+  .post-meta {
+    flex-direction: row;
+  }
+  
+  .text-md-start {
+    text-align: left !important;
+  }
+}
+
+/* Button styles to match your existing pattern */
+.btn-enchanted {
+  background-color: var(--primary-color);
+  color: #ffffff;
+  padding: 8px 16px;
+  border-radius: 50px;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 14px;
+  display: inline-block;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-enchanted:hover {
+  background-color: var(--secondary-color);
+}
+/* Responsive */
+@media (max-width: 768px) {
+  .hero-section {
+    padding: 48px 0;
+    text-align: center;
+  }
+
+  .featured-recipe .row {
+    flex-direction: column;
+  }
+
+  .read-more {
+    font-size: 13px;
+    padding: 6px 12px;
+  }
+}
